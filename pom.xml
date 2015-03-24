@@ -30,4 +30,9 @@
     </parent>
     <artifactId>efaps-buildtools</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <scm>
+        <connection>scm:git:git://github.com/eFaps/eFaps-BuildTools.git</connection>
+        <developerConnection>scm:git:git@github.com:eFaps/eFaps-BuildTools.git</developerConnection>
+        <url>https://github.com/eFaps/eFaps-BuildTools/</url>
+    </scm>
 </project>
