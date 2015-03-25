@@ -20,19 +20,19 @@
   Last Changed By: $Author$
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.efaps</groupId>
         <artifactId>efaps-parent</artifactId>
-        <version>3.2.0-SNAPSHOT</version>
+        <version>3.2.0</version>
     </parent>
     <artifactId>efaps-buildtools</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <scm>
         <connection>scm:git:git://github.com/eFaps/eFaps-BuildTools.git</connection>
         <developerConnection>scm:git:git@github.com:eFaps/eFaps-BuildTools.git</developerConnection>
         <url>https://github.com/eFaps/eFaps-BuildTools/</url>
-    </scm>
+      <tag>V1.0.0</tag>
+  </scm>
 </project>
