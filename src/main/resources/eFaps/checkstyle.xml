@@ -5,13 +5,15 @@
     This configuration file was written by the eclipse-cs plugin configuration editor
 -->
 <!--
-    Checkstyle-Configuration: eFaps-Checkstyle
+    Checkstyle-Configuration: eFaps
     Description: none
 -->
 <module name="Checker">
   <property name="severity" value="warning"/>
   <module name="TreeWalker">
+    <property name="severity" value="ignore"/>
     <property name="tabWidth" value="4"/>
+    <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
     <module name="FileContentsHolder"/>
     <module name="JavadocMethod">
       <property name="allowUndeclaredRTE" value="true"/>
@@ -86,9 +88,7 @@
     <module name="IllegalInstantiation"/>
     <module name="InnerAssignment"/>
     <module name="MissingSwitchDefault"/>
-    <module name="RedundantThrows">
-      <property name="suppressLoadErrors" value="true"/>
-    </module>
+    <module name="RedundantThrows"/>
     <module name="SimplifyBooleanExpression"/>
     <module name="SimplifyBooleanReturn"/>
     <module name="DesignForExtension">
