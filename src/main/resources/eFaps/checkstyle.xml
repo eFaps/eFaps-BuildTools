@@ -10,10 +10,9 @@
 -->
 <module name="Checker">
   <property name="severity" value="warning"/>
+  <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
   <module name="TreeWalker">
-    <property name="severity" value="ignore"/>
     <property name="tabWidth" value="4"/>
-    <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
     <module name="FileContentsHolder"/>
     <module name="JavadocMethod">
       <property name="allowUndeclaredRTE" value="true"/>
@@ -88,7 +87,6 @@
     <module name="IllegalInstantiation"/>
     <module name="InnerAssignment"/>
     <module name="MissingSwitchDefault"/>
-    <module name="RedundantThrows"/>
     <module name="SimplifyBooleanExpression"/>
     <module name="SimplifyBooleanReturn"/>
     <module name="DesignForExtension">
@@ -155,6 +153,10 @@
     <module name="UnnecessaryParentheses"/>
     <module name="MethodTypeParameterName">
       <property name="format" value="^[A-Z]*$"/>
+    </module>
+    <module name="InnerTypeLast"/>
+    <module name="InterfaceTypeParameterName">
+      <property name="format" value="^I[a-z,A-z,1-9]*$"/>
     </module>
   </module>
   <module name="FileTabCharacter"/>
