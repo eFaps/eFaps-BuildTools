@@ -14,6 +14,7 @@
   <module name="TreeWalker">
     <property name="tabWidth" value="4"/>
     <module name="FileContentsHolder"/>
+    <module name="SuppressWarningsHolder"/>
     <module name="JavadocMethod">
       <property name="allowUndeclaredRTE" value="true"/>
       <property name="suppressLoadErrors" value="true"/>
@@ -165,4 +166,5 @@
   <module name="SuppressionCommentFilter"/>
   <module name="JavadocPackage"/>
   <module name="FileLength"/>
+  <module name="SuppressWarningsFilter"/>
 </module>
