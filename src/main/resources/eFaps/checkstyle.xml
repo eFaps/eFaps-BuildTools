@@ -53,7 +53,7 @@
     <module name="MethodLength">
       <property name="max" value="200"/>
       <property name="countEmpty" value="false"/>
-      <metadata name="com.atlassw.tools.eclipse.checkstyle.comment" value="eFpas uses max 200 due to new line foe every parameter etc."/>
+      <metadata name="com.atlassw.tools.eclipse.checkstyle.comment" value="eFaps uses max 200 due to new line for every parameter etc."/>
     </module>
     <module name="ParameterNumber">
       <property name="tokens" value="CTOR_DEF,METHOD_DEF"/>
