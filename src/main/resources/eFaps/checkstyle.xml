@@ -5,7 +5,7 @@
     This configuration file was written by the eclipse-cs plugin configuration editor
 -->
 <!--
-    Checkstyle-Configuration: eFaps
+    Checkstyle-Configuration: eFaps-Checkstyle
     Description: none
 -->
 <module name="Checker">
@@ -13,7 +13,6 @@
   <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
   <module name="TreeWalker">
     <property name="tabWidth" value="4"/>
-    <module name="FileContentsHolder"/>
     <module name="SuppressWarningsHolder"/>
     <module name="JavadocMethod">
       <property name="allowUndeclaredRTE" value="true"/>
@@ -76,12 +75,14 @@
     <module name="AvoidNestedBlocks"/>
     <module name="EmptyBlock"/>
     <module name="LeftCurly">
-      <property name="maxLineLength" value="120"/>
       <property name="tokens" value="LITERAL_CATCH,LITERAL_DO,LITERAL_ELSE,LITERAL_FINALLY,LITERAL_FOR,LITERAL_IF,LITERAL_SWITCH,LITERAL_SYNCHRONIZED,LITERAL_TRY,LITERAL_WHILE"/>
       <metadata name="com.atlassw.tools.eclipse.checkstyle.comment" value="left curly for catch, while etc."/>
     </module>
     <module name="NeedBraces"/>
-    <module name="RightCurly"/>
+    <module name="RightCurly">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
     <module name="EmptyStatement"/>
     <module name="EqualsHashCode"/>
     <module name="HiddenField"/>
@@ -123,7 +124,6 @@
     <module name="DeclarationOrder"/>
     <module name="LeftCurly">
       <property name="option" value="nl"/>
-      <property name="maxLineLength" value="120"/>
       <property name="tokens" value="CLASS_DEF,CTOR_DEF,INTERFACE_DEF,METHOD_DEF"/>
       <metadata name="com.atlassw.tools.eclipse.checkstyle.comment" value="Left Curly for classes and methods"/>
     </module>
@@ -159,11 +159,11 @@
     <module name="InterfaceTypeParameterName">
       <property name="format" value="^I[a-z,A-z,1-9]*$"/>
     </module>
+    <module name="SuppressionCommentFilter"/>
   </module>
   <module name="FileTabCharacter"/>
   <module name="NewlineAtEndOfFile"/>
   <module name="Translation"/>
-  <module name="SuppressionCommentFilter"/>
   <module name="JavadocPackage"/>
   <module name="FileLength"/>
   <module name="SuppressWarningsFilter"/>
